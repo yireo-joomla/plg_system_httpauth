@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_HTTPAUTH</name>
+	<author>Yireo</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>Copyright (C) 2013 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.0.6</version>
+	<description>PLG_SYSTEM_HTTPAUTH_DESC</description>
+
+	<files>
+		<filename plugin="httpauth">httpauth.php</filename>
+        <filename>index.html</filename>
+	</files>
+
+    <languages>
+        <language tag="en-GB">en-GB.plg_system_httpauth.ini</language>
+        <language tag="en-GB">en-GB.plg_system_httpauth.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="redirect" type="menuitem" default="" label="PLG_SYSTEM_HTTPAUTH_FIELD_REDIRECT" description="PLG_SYSTEM_HTTPAUTH_FIELD_REDIRECT_DESC">
+                    <option value="">JNONE</option>
+                </field>
+                <field name="include_ip" type="textarea" default="" label="PLG_SYSTEM_HTTPAUTH_FIELD_INCLUDE_IP" description="PLG_SYSTEM_HTTPAUTH_FIELD_INCLUDE_IP_DESC" />
+                <field name="exclude_ip" type="textarea" default="" label="PLG_SYSTEM_HTTPAUTH_FIELD_EXCLUDE_IP" description="PLG_SYSTEM_HTTPAUTH_FIELD_EXCLUDE_IP_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="plg_system_httpauth">http://www.yireo.com/updates/plg_system_httpauth.xml</server>
+	</updateservers>
+</extension>
