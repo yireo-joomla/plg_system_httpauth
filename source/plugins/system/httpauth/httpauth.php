@@ -3,7 +3,7 @@
  * Joomla! System plugin - HTTP Authentication
  *
  * @author Yireo (info@yireo.com)
- * @copyright Copyright 2013 Yireo.com. All rights reserved
+ * @copyright Copyright 2015 Yireo.com. All rights reserved
  * @license GNU Public License
  * @link http://www.yireo.com
  */
