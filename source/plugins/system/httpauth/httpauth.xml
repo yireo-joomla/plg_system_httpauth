@@ -33,6 +33,6 @@
     </config>
 
 	<updateservers>
-		<server type="extension" priority="1" name="plg_system_httpauth">http://www.yireo.com/updates/plg_system_httpauth.xml</server>
+		<server type="extension" priority="1" name="plg_system_httpauth">https://www.yireo.com/updates/plg_system_httpauth.xml</server>
 	</updateservers>
 </extension>
